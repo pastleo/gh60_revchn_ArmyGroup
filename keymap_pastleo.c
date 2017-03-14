@@ -23,11 +23,11 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     
     /* 0: qwerty for mac */
     KEYMAP_ANSI(
-        GRV, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, BSPC, \
+        ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, BSPC, \
         TAB, Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,RBRC,BSLS, \
         RCTL,A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN,QUOT,     ENT,  \
         LSFT,Z,   X,   C,   V,   B,   N,   M,   COMM,DOT, SLSH,          FN0,  \
-        LCTL,LALT,LGUI,          SPC,                     RGUI,RALT,ESC, FN1),
+        LCTL,LALT,LGUI,          SPC,                     RGUI,RALT,FN2, FN1),
     /* 1: windows mode */
     KEYMAP_ANSI(
         TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS, \
@@ -44,11 +44,11 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         TRNS,TRNS,TRNS,          TRNS,                    TRNS,TRNS,RCTL,TRNS),
     /* 3: functions */
     KEYMAP_ANSI(
-        ESC, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, DEL,  \
+        GRV, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, DEL,  \
         TRNS,TRNS,UP,  TRNS,HOME,PGUP,TRNS,TRNS,TRNS,TRNS,TRNS,RSFT,INS, CAPS, \
         TRNS,LEFT,DOWN,RGHT,END ,PGDN,LEFT,DOWN,UP,  RGHT,TRNS,APP,      TRNS, \
         TRNS,PSCR,SLCK,PAUS,TRNS,MUTE,VOLD,VOLU,MPRV,MPLY,MNXT,          TRNS, \
-        TRNS,TRNS,TRNS,          FN2,                     TRNS,TRNS,TRNS,TRNS),
+        TRNS,TRNS,TRNS,          TRNS,                    TRNS,TRNS,TRNS,TRNS),
     /* 4: mouse mode */
     KEYMAP_ANSI(
         TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS, \
