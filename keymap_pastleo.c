@@ -45,13 +45,13 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* 3: functions */
     KEYMAP_ANSI(
         GRV, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, DEL,  \
-        TRNS,TRNS,UP,  TRNS,HOME,PGUP,TRNS,TRNS,TRNS,TRNS,TRNS,RSFT,INS, CAPS, \
-        TRNS,LEFT,DOWN,RGHT,END ,PGDN,LEFT,DOWN,UP,  RGHT,TRNS,APP,      TRNS, \
-        TRNS,PSCR,SLCK,PAUS,TRNS,MUTE,VOLD,VOLU,MPRV,MPLY,MNXT,          TRNS, \
+        TRNS,TRNS,UP,  TRNS,TRNS,TRNS,TRNS,TRNS,APP ,INS ,HOME,PGUP,RSFT,CAPS, \
+        TRNS,LEFT,DOWN,RGHT,TRNS,TRNS,LEFT,DOWN,UP,  RGHT,END ,PGDN,     TRNS, \
+        TRNS,PSCR,SLCK,PAUS,TRNS,TRNS,TRNS,LEFT,DOWN,UP,  RGHT,          TRNS, \
         TRNS,TRNS,TRNS,          TRNS,                    TRNS,TRNS,TRNS,TRNS),
-    /* 4: mouse mode */
+    /* 4: gui mode */
     KEYMAP_ANSI(
-        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS, \
+        TRNS,MUTE,VOLD,VOLU,MPRV,MPLY,MNXT,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS, \
         TRNS,WH_D,MS_U,WH_U,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS, \
         TRNS,MS_L,MS_D,MS_R,TRNS,TRNS,WH_L,WH_D,WH_U,WH_R,TRNS,ACL0,     TRNS, \
         TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,BTN1,BTN2,BTN3,          TRNS, \
@@ -68,7 +68,7 @@ const uint16_t PROGMEM fn_actions[] = {
     /* Poker Layout */
     [0] = ACTION_LAYER_MOMENTARY(3),  // to Fn overlay
     [1] = ACTION_LAYER_MOMENTARY(5),  // to settings
-    [2] = ACTION_LAYER_MOMENTARY(4),  // to mouse mode
+    [2] = ACTION_LAYER_MOMENTARY(4),  // to gui mode
     [3] = ACTION_LAYER_TOGGLE(1),     // mac or windows mode
     [4] = ACTION_LAYER_TOGGLE(2),     // toggle non-geek mode
 };
